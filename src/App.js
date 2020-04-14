@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
+import Order from './containers/pages/Order';
 
 function App() {
   return (
     <div>
-      <p>Hallo</p>
+      <Order/>
     </div>
   );
 }
