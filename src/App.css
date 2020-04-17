@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'openSans';
-  src: url('./assets//fonts/OpenSans-Regular.ttf') format("truetype");
+  src: url('./assets/fonts/OpenSans-Regular.ttf') format("truetype");
 }
 @font-face {
   font-family: 'poppins';
@@ -8,6 +8,32 @@
 }
 body{
   font-family: 'openSans';
+  color: #494949;
+}
+span{
+  font-size: 15px;
+}
+p{
+  font-size: 15px;
+  margin: 0;
+}
+.cBlack{
+  color: black !important;
+}
+.bold{
+  font-weight: 600 !important;
+}
+.mt20{
+  margin-top: 20px !important;
+}
+.mb0{
+  margin-bottom: 0px !important;
+}
+.mr8{
+  margin-right: 8px;
+}
+.cGrey{
+  color: #828282;
 }
 
 .nav{
@@ -45,7 +71,7 @@ body{
 .content{
   margin: 0 auto;
   width: 80%;
-  margin-top: 22px;
+  margin-top: 24px;
 }
 h4{
   margin: 0;
@@ -64,22 +90,145 @@ h4{
 }
 .labelFilter > button {
   position: absolute;
-  outline: none;
-  background: transparent;
-  border: none;
   color: #828282;
   font-weight: 600;
   letter-spacing: .2px;
   right: 0px;
-  cursor: pointer;
   padding: 4px;
-}
-.labelFilter > button:hover{
-  background: #ececec;
-  border-radius: 4px;
 }
 .labelFilter > button > img{
   margin-left: 6px;
   width: 18px;
   vertical-align: middle;
+}
+.tblFilter{
+  margin: 8px 6px;
+  padding: 4px 8px;
+}
+.labelBgGray{
+  background: #F7F7F7;
+  border-radius: 3px;
+}
+.containerFilter{
+  text-align: center;
+  margin-top: 14px;
+  border: 1px solid #E5E5E5;
+  padding: 10px 0;
+  border-radius: 3px;
+}
+.tblFilter > button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.tblFilter > button > img{
+  width: 16px;
+}
+.myBtn{
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.myBtn:hover{
+  background: rgb(240, 240, 240);
+  border-radius: 4px;
+}
+.ticketItem{
+  border: 1px solid #E5E5E5;
+  margin: 8px 0px 18px 0px;
+  border-radius: 3px;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.25);
+  padding: 20px 24px 24px 24px;
+}
+.detailTicket{
+  display: inline-block;
+  width: 19.7%;
+  vertical-align: top;
+}
+.detailTicketDelete{
+  width: 1%;
+}
+.ticketLabel{
+  color: #828282;
+  font-size: 13px;
+  margin-bottom: 12px;
+  position: relative;
+}
+.typeWay{
+  position: absolute;
+  width: 100%;
+  left: -2px;
+}
+.typeWayValue{
+  position: absolute;
+  width: 100%;
+  left: -2px;
+}
+.typeWay > span{
+  display: inline-block;
+  width: 23%;
+  font-size: 13px;
+  padding: 2px 4px;
+}
+.typeWayValue > span{
+  display: inline-block;
+  width: 23%;
+  font-size: 15px;
+  padding: 2px 4px;
+  color: #494949;
+}
+.ticketValue{
+  margin-bottom: 2px;
+}
+.wrapperBtnShowDetailOrder{
+  position: relative;
+}
+.btnShowDetailOrder{
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #3597FF;
+  font-size: 14px;
+  position: absolute;
+  padding: 4px 8px;
+  border-radius: 4px;
+  left: -9px;
+  cursor: pointer;
+}
+.btnShowDetailOrder:hover{
+  background: rgba(53, 151, 255, 0.1);
+}
+.btnShowDetailOrder > img{
+  width: 16px;
+  margin-left: 18px;
+}
+.btnQty{
+  background: #24D89B;
+  padding: 8px 18px;
+  border: none;
+  color: #FFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btnQty:hover{
+  background: rgb(26, 168, 121);
+}
+.btnDelete{
+  background: #CCCCCC;
+  width: 25px;
+  height: 25px;
+  padding: 0px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 44px;
+}
+.btnDelete > img {
+  width: 15px;
+  vertical-align: top;
+}
+.btnDelete:hover{
+  background: rgb(177, 177, 177);
 }
