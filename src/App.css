@@ -59,6 +59,9 @@ hr{
 .minHeight{
   min-height: 135px;
 }
+.tcenter{
+  text-align: center;
+}
 
 .nav{
   display: flex;
@@ -134,7 +137,7 @@ h4{
   border-radius: 3px;
 }
 .containerFilter{
-  text-align: center;
+  /* text-align: center; */
   margin-top: 14px;
   border: 1px solid #E5E5E5;
   padding: 10px 0;
@@ -274,31 +277,12 @@ h4{
   display: block;
   animation: showTicketDetail .7s ease forwards;
 }
-@keyframes showTicketDetail {
-  from {height: 0; opacity: 0;}
-  to {height: 670px; opacity: 1;}
-}
-@keyframes hideTicketDetail {
-  0% {height: 670px; opacity: 1;}
-  /* 80% {opacity: .6;} */
-  100% {height: 0; opacity: 0;}
-}
-@keyframes spin180deg { 
-  0% { transform:rotate(0deg); }
-  100% { transform:rotate(180deg); }
-}
-@keyframes spin0deg { 
-  0% { transform: rotate(180deg); }
-  100% { transform:rotate(0deg); }
-}
 .detailOrder{
   width: 100%;
 }
 .detailOrderLeft{
   width: 64%;
   display: inline-block;
-  /* background: rgba(255, 0, 0, 0.219); */
-  /* margin: 6px; */
   margin-right: 20px;
 }
 .detailOrderLeftWithCenter{
@@ -307,14 +291,12 @@ h4{
 .detailOrderCenter{
   width: 28%;
   display: inline-block;
-  /* background: #49494938; */
   vertical-align: top;
   margin-right: 20px;
 }
 .detailOrderRight{
   width: 33%;
   display: inline-block;
-  /* background: rgba(165, 42, 42, 0.404); */
   vertical-align: top;
 }
 .detailOrderItem{
@@ -322,10 +304,7 @@ h4{
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
   width: 100%;
-  /* min-height: 130px; */
   margin-top: 10px;
-  /* padding-top: 10px;
-  padding-bottom: 6px; */
 }
 .detailOrderItem > p {
   margin-left: 14px;
@@ -342,15 +321,6 @@ h4{
   border: .25px solid #CCCCCC !important;
   margin-bottom: 3px;
 }
-/* .detailOrderItemLeft{
-  width: 6%;
-  display: inline-block;
-}
-.detailOrderItemRight{
-  width: 93%;
-  display: inline-block;
-  border-left: .5px solid #CCCCCC;
-} */
 .contentdetailOrderItem{
   display: flex;
 }
@@ -368,14 +338,12 @@ h4{
 .wrapDetailOrderDescLeft{
   display: inline-block;
   width: 46%;
-  /* margin-left: 6px; */
   margin-right: 2%;
   margin-left: 2px;
 }
 .wrapDetailOrderDescRight{
   display: inline-block;
   width: 46%;
-  /* margin-right: 6px; */
   margin-left: 2%;
 }
 .documentOrdre{
@@ -385,4 +353,138 @@ h4{
 .imgFile{
   width: 11px;
   margin-left: 4px;
+}
+.wrapFormOrderFilterHide{
+  display: none;
+}
+.wrapFormOrderFilterShow{
+  display: block;
+}
+.btnShowFilterTrue > img{
+  animation: spin180deg .5s ease 1 forwards;
+}
+.btnShowFilterFalse > img {
+  animation: spin0deg .5s ease 1 forwards;
+}
+.wrapFormOrderFilter{
+  width: 95%;
+  margin:0 auto;
+}
+.wrapInputOrderFilter{
+  width: 23%;
+  display: inline-block;
+  padding: 10px;
+}
+.wrapInputOrderFilter > p{
+  margin-bottom: 6px;
+}
+.wrapInputOrderFilter > input{
+  width: 100%;
+  height: 22px;
+  border: 1px solid #CCCCCC;
+  color: #4F4F4F;
+  margin-bottom: 8px;
+  border-radius: 1px;
+}
+.footerInputOrderFilter{
+  display: flex;
+  justify-content: space-between;
+}
+.footerInputOrderFilter > div > p {
+  margin-bottom: 6px;
+}
+.mySelectDropDown{
+  height: 25px;
+  width: 94px;
+  border: 1px solid #CCCCCC;
+  appearance: button;
+  outline: none;
+  border-radius: 1px;
+  color: #787878;
+}
+.dropdownWrap{
+  position: relative;
+}
+.dropdownWrap > img {
+  position: absolute;
+  width: 15px;
+  right: 3px;
+  top: 8px;
+}
+.footerInputOrderFilterVertical{
+  display: flex;
+  flex-direction: column;
+}
+.wrapdrpdown {
+  position: relative;
+}
+.footerInputOrderFilterVertical > div > p {
+  margin-bottom: 6px;
+}
+.footerInputOrderFilterVertical > div > select {
+  width: 100%; 
+  color: #787878;
+}
+.footerInputOrderFilterVertical > div > img {
+  position: absolute;
+  width: 15px;
+  right: 3px;
+  top: 8px;
+}
+.btnFilter{
+  background: #3597FF;
+  color: white;
+  border: none;
+  border-radius: 1px;
+  font-weight: 600;
+  padding: 6px 36px;
+  cursor: pointer;
+}
+.btnFilter:hover{
+  background: rgb(41, 116, 197);
+}
+.btnFilterReset{
+  background: transparent;
+  color: #828282;
+  border: none;
+  border-radius: 1px;
+  font-weight: 600;
+  padding: 6px 20px;
+  cursor: pointer;
+}
+.btnFilterReset:hover{
+  background: #e9e9e9;
+}
+.btnCloseDetail{
+  background: transparent;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  padding: 3px;
+  margin-top: 6px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.btnCloseDetail:hover{
+  background: rgba(53, 151, 255, 0.2);
+}
+.btnCloseDetail > img {
+  width: 16px;
+  transform: rotate(180deg);
+}
+@keyframes showTicketDetail {
+  from {height: 0; opacity: 0;}
+  to {height: 680px; opacity: 1;}
+}
+@keyframes hideTicketDetail {
+  0% {height: 680px; opacity: 1;}
+  100% {height: 0; opacity: 0;}
+}
+@keyframes spin180deg { 
+  0% { transform:rotate(0deg); }
+  100% { transform:rotate(180deg); }
+}
+@keyframes spin0deg { 
+  0% { transform: rotate(180deg); }
+  100% { transform:rotate(0deg); }
 }

@@ -267,6 +267,13 @@ const OrderItem  = (props)=>{
                             <div className="detailOrderRight"></div>
 
                         </div>
+                        
+                        <div>
+                            <button onClick={handleShowDetailTicket} className="btnCloseDetail">
+                                <img src={require('../../assets/icons/arrow-drop-down_blue.png')} alt="close"/>
+                            </button>
+                        </div>
+
                     </div>
                 </div>
 
