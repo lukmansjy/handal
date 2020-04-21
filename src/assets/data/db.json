@@ -24,5 +24,18 @@
         "cargo": "Laut",
         "incoterms": "FOB",
         "qty": 87
+    },
+    {
+        "orderId": "347534758389",
+        "origin": "Tanjung Priuk",
+        "originState": "Indonesia",
+        "destination": "Port of Singapore",
+        "destinationState": "Singapore",
+        "eta": "06 Desember 2018",
+        "typeContainer": "FCL 20 Dry",
+        "type": "Import",
+        "cargo": "Laut",
+        "incoterms": "FOB",
+        "qty": 79
     }
 ]

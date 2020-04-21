@@ -1,13 +1,12 @@
 import React, {Component} from 'react'
 import OrderItem from '../../components/molecules/OrderItem'
-
-import dataOrders from '../../assets/data/db.json'
+import { connect } from 'react-redux'
 
 class OrderList extends Component{
     render(){
         return(
             <div className="content">
-                {dataOrders.map( (dataOrder, index )=> (
+                {this.props.dataOrders.map( (dataOrder, index )=> (
                     <OrderItem dataOrder={dataOrder} index={index}/>
                 ) )}
             </div>
@@ -15,4 +14,11 @@ class OrderList extends Component{
     }
 }
 
-export default OrderList
+const mapStateToProps = (state) =>{
+    console.log(state)
+    return {
+        dataOrders: state
+    }
+}
+
+export default connect(mapStateToProps)(OrderList)

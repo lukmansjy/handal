@@ -37,7 +37,10 @@ const OrderItem  = (props)=>{
                 <div className="ticketItem">
                     <div className="detailTicket">
                         <p className="ticketLabel">Asal</p>
-                        <p className="ticketValue cBlack">{dataOrder.orgin}</p>
+                        <div className="wrapOrigin">
+                            <p className="ticketValue cBlack">{dataOrder.origin}</p>
+                            <img src={require('../../assets/icons/arrow-long-right.png')} alt="To destination" className="imgArrowDestination"/>
+                        </div>
                         <p className="ticketLabel">{dataOrder.originState}</p>
                         <div className="wrapperBtnShowDetailOrder">
                             <BtnShowDetailOrder handleShowDetailTicket={handleShowDetailTicket} show={state.showDetailTicket}/>
@@ -134,7 +137,7 @@ const OrderItem  = (props)=>{
                                 <p className="cGrey mt14">Barang pengiriman</p>
                                 <div className="detailOrderItem">
                                     
-                                    <DeliveryDetail/>
+                                    <DeliveryDetail dataOrder={dataOrder}/>
 
                                 </div>
                             </div>
@@ -221,7 +224,7 @@ const OrderItem  = (props)=>{
                             <div className="detailOrderLeft">
                                 <div className="detailOrderItem">
                                     
-                                    <DeliveryDetail/>
+                                    <DeliveryDetail dataOrder={dataOrder}/>
 
                                 </div>
                             </div>
@@ -260,7 +263,7 @@ const OrderItem  = (props)=>{
                             <div className="detailOrderLeft">
                                 <div className="detailOrderItem">
                                     
-                                    <DeliveryDetail/>
+                                    <DeliveryDetail dataOrder={dataOrder}/>
 
                                 </div>
                             </div>

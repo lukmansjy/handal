@@ -267,7 +267,7 @@ h4{
   background: rgb(177, 177, 177);
 }
 .hideDetailTicket{
-  /* display: none; */
+  display: none;
   height: 0;
   opacity: 0;
   animation: hideTicketDetail .7s ease forwards;
@@ -471,6 +471,15 @@ h4{
 .btnCloseDetail > img {
   width: 16px;
   transform: rotate(180deg);
+}
+.wrapOrigin{
+  position: relative;
+}
+.imgArrowDestination{
+  width: 40px;
+  position: absolute;
+  top: 4px;
+  right: 17px;
 }
 @keyframes showTicketDetail {
   from {height: 0; opacity: 0;}

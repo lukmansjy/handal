@@ -1,13 +1,13 @@
 import React from 'react'
 
-const DeliveryDetail = (props)=>{
+const DeliveryDetail = ()=>{
     return(
         <div className="contentdetailOrderItem">
             <div className="detailOrderItemLeft">
                 <p>1</p>
             </div>
             <div className="detailOrderItemRight">
-                <p className="ml16 bold cGrey">PCB Board Merk A</p>
+                <p className="ml16 bold cGrey">cc</p>
                 <div className="wrapDetailOrderDescLeft">
                     <div className="detailOrderTotal">
                         <div className="pt10">
